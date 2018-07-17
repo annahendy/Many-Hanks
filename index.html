@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<!--My names Anna and I wrote some jquery wooo-->
+
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Many Hanks Nice and Serious</title>
+<style type="text/css">
+
+body {
+	font-family: 'Muli', sans-serif;
+	background-color: #E6E6E6;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+input {
+    background-color: transparent;
+    border: 0px solid;
+    color: #000000;
+	font-family: 'Muli', sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	text-align:center;
+}
+	
+	
+h1 {
+	font-size:20px;
+	font-weight:bold;
+	padding-top:60px;
+}
+
+h2 {
+	background-color:#FFFFFF;
+	padding:5px;
+	}
+
+p {
+	font-size:13px;
+	font-style: oblique;
+
+}
+
+h3 {
+	font-size:16px;
+}
+
+.main {
+	padding-left:10%;
+	padding-right:10%;
+	padding-top:20px;
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1200px;
+	text-align: center; 
+}
+	
+.hank {
+    display: inline-block; 
+    margin: 5px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.thanks {
+	padding-top:20px;
+	padding-bottom:20px;
+	
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+.answer {
+	color: #E60000;
+}
+
+.incorrect {
+	color: #E60000;
+}
+
+.correct {
+	color: #0fad93;
+}
+
+
+a {
+    color: #000000; text-decoration:underline;
+}
+
+#yes
+{
+	position:fixed; 
+	bottom:20px; 
+	width:100%; 
+	text-align:center;
+	display:none;
+	color: #0fad93;
+	background-color: #ffffff;
+	padding-top:auto;
+	padding-bottom:auto;
+}
+
+#no
+{
+	position:fixed; 
+	bottom:20px; 
+	width:100%; 
+	text-align:center;
+	display:none;
+	color: #E60000;
+	background-color: #ffffff;
+	padding-top:auto;
+	padding-bottom:auto;
+}
+
+	
+	
+</style>
+
+
+</head>
+
+<body>
+
+<h1>How many Hanks do you know?</h1>
+<p>Type your guess
+</p>
+
+<div class="main">
+ 
+<div class="hank" id="1"><img src="Hank1.png" width="100"  alt="Hank 1"/>
+<h2><input id="1" data-name="Hank Azaria" type="text" value="Hank " maxlength="11" size="12" /></h2>
+</div>
+
+<div class="hank" id="2">
+<img src="Hank2.png" width="100" alt="Hank 2"/>
+<h2><input id="2" type="text" data-name="Hank Green" value="Hank " maxlength="10" size="11" /></h2>
+</div>
+
+<div class="hank" id="3">
+<img src="Hank3.png" width="100" alt="Hank 3" />
+<h2><input id="3" data-name="Hank Hill" type="text" value="Hank " maxlength="9" size="10" /></h2>
+</div>
+
+<div class="hank" id="4">
+<img src="Hank4.png" width="100" alt="Hank 4"/>
+<h2><input id="4" data-name="Hank Marvin" type="text" value="Hank " maxlength="11" size="12" /></h2>
+</div>
+
+<div class="hank" id="5">
+<img src="Hank5.png" width="100" alt="Hank 5" />
+<h2><input id="5" data-name="Hank Pym" type="text" value="Hank " maxlength="8" size="9" /></h2>
+</div>
+
+<div class="hank" id="6">
+<img src="Hank6.png" width="160" height="142" alt="Hank 6" />
+<h2><input id="6" data-name="Hank Williams" type="text" value="Hank " maxlength="13" size="14" /></h2>
+</div>
+
+<div class="hank" id="7">
+<img src="Hank7.png" width="100" alt="Hank 7" />
+<h2><input id="7" data-name="Hank Schrader" type="text" value="Hank " maxlength="13" size="14" /></h2>
+</div>
+
+<div class="hank" id="8">
+<img src="Hank8.png" width="100" alt="Hank 8" />
+<h2><input id="8" data-name="Tom Hanks" type="text" value=" Hanks" maxlength="9" size="10" /></h2>
+</div>
+
+<div class="hank" id="9">
+<img src="Hank9.png" width="100" alt="Hank 9" />
+<h2><input id="9" data-name="Hank Baskett" type="text" value="Hank " maxlength="12" size="13" /></h2>
+</div>
+
+<div class="hank" id="10">
+<div class="bonus" style="position: relative">
+<img src="bonus-01.png" width="70" alt="Bonus" style="position: absolute; top: 5px; left: 135px;"/></div>
+<img src="Hank10.png" width="100" alt="Hank 10" />
+<h2><input id="10" data-name="Hank Jennings" type="text" value="Hank " maxlength="13" size="13" />
+</h2>
+</div>
+
+</div>
+
+<div class="answer">
+<div id="no">
+<p> WRONG! <br> You Plank.
+</p>
+  </div>
+  <div id="yes">
+<p> RIGHT! <br> That&rsquo;s the Hank!
+</p>
+  </div>
+</div>
+
+<div class="thanks">
+<h3>Many Hanks for having <a href="http://annahendy.com/" target="_blank">me</a>, <a href="http://niceandserious.com/" target="_blank">Nice and Serious</a>!</h3>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$("input").each(function(){
+
+$(this).keyup(function() {
+
+	if 
+	( $( this ).data("name").toLowerCase() == $( this ).val().toLowerCase() )
+		{ $(this).attr("class", "correct");
+		  $("#yes").show();
+		  $("#no").hide();
+			setTimeout(function()  { $("#yes").hide(); }, 5000); }
+		
+		
+	else { 
+    	$(this).attr("class","incorrect");
+    	$("#no").show();
+    	$("#yes").hide();
+			setTimeout(function() { $("#no").hide(); }, 5000); }
+			
+			
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
