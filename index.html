@@ -4,7 +4,7 @@
 
 <!--My names Anna and I wrote some jquery wooo-->
 
-<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Many Hanks Nice and Serious</title>
@@ -27,8 +27,8 @@ input {
 	font-weight:normal;
 	text-align:center;
 }
-	
-	
+
+
 h1 {
 	font-size:20px;
 	font-weight:bold;
@@ -58,24 +58,24 @@ h3 {
 	margin-left:auto;
 	margin-right:auto;
 	max-width:1200px;
-	text-align: center; 
+	text-align: center;
 }
-	
+
 .hank {
-    display: inline-block; 
+    display: inline-block;
     margin: 5px;
     padding: 15px;
     width: 200px;
     height: 200px;
 	margin-left:auto;
 	margin-right:auto;
-	
+
 }
 
 .thanks {
 	padding-top:20px;
 	padding-bottom:20px;
-	
+
 }
 
 textarea:focus, input:focus{
@@ -101,9 +101,9 @@ a {
 
 #yes
 {
-	position:fixed; 
-	bottom:20px; 
-	width:100%; 
+	position:fixed;
+	bottom:20px;
+	width:100%;
 	text-align:center;
 	display:none;
 	color: #0fad93;
@@ -114,9 +114,9 @@ a {
 
 #no
 {
-	position:fixed; 
-	bottom:20px; 
-	width:100%; 
+	position:fixed;
+	bottom:20px;
+	width:100%;
 	text-align:center;
 	display:none;
 	color: #E60000;
@@ -125,8 +125,8 @@ a {
 	padding-bottom:auto;
 }
 
-	
-	
+
+
 </style>
 
 
@@ -139,7 +139,7 @@ a {
 </p>
 
 <div class="main">
- 
+
 <div class="hank" id="1"><img src="Hank1.png" width="100"  alt="Hank 1"/>
 <h2><input id="1" data-name="Hank Azaria" type="text" value="Hank " maxlength="11" size="12" /></h2>
 </div>
@@ -210,7 +210,7 @@ a {
 </div>
 
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script>
 $(document).ready(function(){
 
@@ -218,21 +218,21 @@ $("input").each(function(){
 
 $(this).keyup(function() {
 
-	if 
+	if
 	( $( this ).data("name").toLowerCase() == $( this ).val().toLowerCase() )
 		{ $(this).attr("class", "correct");
 		  $("#yes").show();
 		  $("#no").hide();
 			setTimeout(function()  { $("#yes").hide(); }, 5000); }
-		
-		
-	else { 
+
+
+	else {
     	$(this).attr("class","incorrect");
     	$("#no").show();
     	$("#yes").hide();
 			setTimeout(function() { $("#no").hide(); }, 5000); }
-			
-			
+
+
 
 });
 
